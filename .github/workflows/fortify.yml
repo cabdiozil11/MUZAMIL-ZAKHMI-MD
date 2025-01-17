@@ -17,7 +17,8 @@ name: Fortify AST Scan
 
 # Customize trigger events based on your DevSecOps process and/or policy
 on:
-  push:
+  push: 2s
+Run fortify/github-action@a92347297e02391b857e7015792cd1926a4cd418
     branches: [ "main" ]
   pull_request:
     # The branches below must be a subset of the branches above
