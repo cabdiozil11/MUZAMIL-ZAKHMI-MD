@@ -88,7 +88,7 @@ jobs:
 
     # 2.2 (Optional) Build and push image ACR EE
     - name: Build and push image to ACR EE
-      run: |
+      run: | 
         docker build -t "$ACR_EE_REGISTRY/$ACR_EE_NAMESPACE/$ACR_EE_IMAGE:$TAG" .
         docker push "$ACR_EE_REGISTRY/$ACR_EE_NAMESPACE/$ACR_EE_IMAGE:$TAG"
     # 2.3 (Optional) Scan image in ACR EE
